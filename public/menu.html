@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ALLICOOKLYN</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-hero">
+
+        <div class="container hero">
+
+            <div class="customer-support">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <div class="content-customer-support">
+
+                    <span class="text">Soporte al cliente</span>
+
+                    <span class="number">449-363-2146</span>
+
+                </div>
+
+            </div>
+
+            <div class="container-logo">
+
+                <i class="fa-solid fa-kitchen-set"></i>
+
+                <h1 class="logo">
+
+                    <a href="#">ALLICOOKLYN</a>
+
+                </h1>
+
+            </div>
+
+            <div class="container-user">
+
+                <i class="fa-solid fa-user"></i>
+
+                <i class="fa-solid fa-basket-shopping"></i>
+
+                <div class="content-shopping-cart">
+
+                    <span class="text">PEDIDOS</span>
+
+                    <span class="number">(0)</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- FORMULARIO -->
+
+<section class="formulario">
+
+    <h2>Datos del Cliente</h2>
+
+    <input
+    type="text"
+    id="nombre"
+    placeholder="Nombre">
+
+    <input
+    type="number"
+    id="edad"
+    placeholder="Edad">
+
+    <input
+    type="text"
+    id="telefono"
+    placeholder="Teléfono">
+
+    <input
+    type="text"
+    id="direccion"
+    placeholder="Dirección">
+
+    <br><br>
+
+    <h3>Preferencias Alimenticias</h3>
+
+    <label>
+
+        <input type="checkbox" id="vegetariano">
+
+        Vegetariano
+
+    </label>
+
+    <br><br>
+
+    <label>
+
+        <input type="checkbox" id="vegano">
+
+        Vegano
+
+    </label>
+
+    <br><br>
+
+    <label>
+
+        <input type="checkbox" id="sinlac">
+
+        Sin Lactosa
+
+    </label>
+
+    <br><br>
+
+    <label>
+
+        <input type="checkbox" id="bajocarbo">
+
+        Bajo en Carbohidratos
+
+    </label>
+
+    <br><br>
+
+    <label>
+
+        <input type="checkbox" id="azucar">
+
+        Sin Azúcar
+
+    </label>
+
+    <br><br>
+
+    <label>
+
+        <input type="checkbox" id="proteina">
+
+        Alto en Proteína
+
+    </label>
+
+    <br><br>
+
+    <label>
+
+        <input type="checkbox" id="restriccion">
+
+        Sin Restricciones
+
+    </label>
+
+    <br><br>
+
+    <button onclick="mostrarRecetas()">
+
+        VER RECETAS
+
+    </button>
+
+</section>
+
+<!-- RECETAS -->
+
+<section id="menurecetas"></section>
+
+<!-- TICKET -->
+
+<section id="ticket"></section>
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

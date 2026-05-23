@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image:
+    linear-gradient(to bottom right,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.7)),
+    url("Ensalada de quinoa.jpg");
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+.container-hero{
+
+    background: rgba(0,0,0,0.5);
+
+    padding: 20px;
+}
+
+.hero{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.container-logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+container-logo{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.logo a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 30px;
+
+    font-weight: 600;
+}
+
+.customer-support{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.container-user{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.content-shopping-cart{
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+/* NAVBAR */
+
+.container-navbar{
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 15px;
+}
+
+.navbar{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.menu{
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+.menu a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.menu a:hover{
+
+    color: #7CFC00;
+}
+
+.search-form{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.search-form input{
+
+    padding: 8px;
+
+    border: none;
+
+    border-radius: 5px;
+}
+
+.btn-search{
+
+    background: #7CFC00;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* FORMULARIO */
+
+.formulario{
+
+    width: 80%;
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(5px);
+}
+
+.formulario h2,
+.formulario h3{
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.formulario input{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+.formulario label{
+
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 16px;
+}
+
+/* BOTONES */
+
+button{
+
+    background: #32CD32;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+button:hover{
+
+    background: #228B22;
+}
+
+/* PLATILLOS */
+
+#menuPlatillos{
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.platillo{
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 30px;
+
+    margin-top: 20px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.platillo h1{
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    color: #7CFC00;
+}
+
+.platillo h2{
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.platillo h3{
+
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+}
+
+.platillo ul,
+.platillo ol{
+
+    margin-left: 20px;
+
+    line-height: 2;
+}
+
+.platillo input{
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 10px;
+}
+
+/* IMAGENES */
+
+.imagen-receta{
+
+    width: 100%;
+
+    max-width: 500px;
+
+    display: block;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 20px black;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* TICKET */
+
+.ticketFinal{
+
+    width: 80%;
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background: rgba(255,255,255,0.1);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(5px);
+}
+
+.ticketFinal h1{
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.ticketFinal h2{
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #7CFC00;
+}
+
+.ticketFinal p{
+
+    margin-top: 10px;
+
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero,
+    .navbar{
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .menu{
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .formulario,
+    .ticketFinal,
+    .platillo{
+
+        width: 95%;
+    }
+}

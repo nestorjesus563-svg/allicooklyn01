@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panel Administrativo</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.seccion{
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    background: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th{
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+table td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.editar{
+    background: #2196F3;
+}
+
+.eliminar{
+    background: #f44336;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>PANEL ADMINISTRATIVO - ALLICOOKLYN</h1>
+
+<!-- CLIENTES -->
+
+<div class="seccion">
+
+    <h2>Clientes Registrados</h2>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Teléfono</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Juan Pérez</td>
+            <td>25</td>
+            <td>4491234567</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Ana López</td>
+            <td>30</td>
+            <td>4499876543</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- PLATILLOS -->
+
+<div class="seccion">
+
+    <h2>Platillos</h2>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Platillo</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Ensalada de Quinoa</td>
+            <td>Vegetariano</td>
+            <td>$80</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Pizza Pepperoni</td>
+            <td>Sin Restricciones</td>
+            <td>$180</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- COMPRAS -->
+
+<div class="seccion">
+
+    <h2>Compras Realizadas</h2>
+
+    <table>
+
+        <tr>
+            <th>ID Compra</th>
+            <th>Cliente</th>
+            <th>Total</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Juan Pérez</td>
+            <td>$260</td>
+            <td>12/05/2026</td>
+
+            <td>
+                <button class="editar">Ver</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- INGREDIENTES -->
+
+<div class="seccion">
+
+    <h2>Ingredientes</h2>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Ingrediente</th>
+            <th>Cantidad</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Tomate</td>
+            <td>20 kg</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Queso</td>
+            <td>15 kg</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- PROVEEDORES -->
+
+<div class="seccion">
+
+    <h2>Proveedores</h2>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Proveedor</th>
+            <th>Teléfono</th>
+            <th>Producto</th>
+            <th>Acciones</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Distribuidora Central</td>
+            <td>4495551122</td>
+            <td>Verduras</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Lácteos del Norte</td>
+            <td>4498887766</td>
+            <td>Quesos</td>
+
+            <td>
+                <button class="editar">Editar</button>
+                <button class="eliminar">Eliminar</button>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+
+</html>

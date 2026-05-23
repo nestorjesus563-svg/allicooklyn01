@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Panel Administrativo</title>
+
+    <link rel="stylesheet" href="estilo1.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1>PANEL ADMINISTRATIVO - ALLICOOKLYN</h1>
+
+    <!-- CLIENTES -->
+
+    <div class="seccion">
+
+        <h2>Clientes Registrados</h2>
+
+        <table id="tablaClientes"></table>
+
+    </div>
+
+    <!-- PEDIDOS -->
+
+    <div class="seccion">
+
+        <h2>Pedidos</h2>
+
+        <table id="tablaPedidos"></table>
+
+    </div>
+
+    <!-- EMPLEADOS -->
+
+    <div class="seccion">
+
+        <h2>Registrar Empleado</h2>
+
+        <input type="text" id="nombreEmpleado" placeholder="Nombre">
+
+        <input type="text" id="telefonoEmpleado" placeholder="Teléfono">
+
+        <input type="text" id="puestoEmpleado" placeholder="Puesto">
+
+        <input type="number" id="salarioEmpleado" placeholder="Salario">
+
+        <button onclick="guardarEmpleado()">
+
+            Guardar Empleado
+
+        </button>
+
+    </div>
+
+    <div class="seccion">
+
+        <h2>Empleados</h2>
+
+        <table id="tablaEmpleados"></table>
+
+    </div>
+
+    <!-- PROVEEDORES -->
+
+    <div class="seccion">
+
+        <h2>Registrar Proveedor</h2>
+
+        <input type="text" id="nombreProveedor" placeholder="Nombre">
+
+        <input type="text" id="telefonoProveedor" placeholder="Teléfono">
+
+        <input type="text" id="empresaProveedor" placeholder="Empresa">
+
+        <input type="text" id="direccionProveedor" placeholder="Dirección">
+
+        <button onclick="guardarProveedor()">
+
+            Guardar Proveedor
+
+        </button>
+
+    </div>
+
+    <div class="seccion">
+
+        <h2>Proveedores</h2>
+
+        <table id="tablaProveedores"></table>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
