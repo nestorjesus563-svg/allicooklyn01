@@ -495,11 +495,8 @@ async function guardarProveedor(){
 
     if(proveedorEditando != null){
 
-        await fetch(
 
-await fetch(
-    `${API}/proveedores/${proveedorEditando}`,
-            {
+await fetch(`${API}/proveedores/${proveedorEditando}`, {
 
                 method: "PUT",
 
