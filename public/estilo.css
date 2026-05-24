@@ -537,3 +537,52 @@ h2{
         padding: 12px 20px;
     }
 }
+
+/* ========================= */
+/* TABLAS RESPONSIVE */
+/* ========================= */
+
+.tabla-responsive{
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+
+table{
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+}
+
+
+
+/* CELULAR */
+
+@media(max-width: 768px){
+
+    h1{
+
+        font-size: 28px;
+
+        text-align: center;
+    }
+
+    table{
+
+        min-width: 1000px;
+    }
+
+    button{
+
+        padding: 8px;
+    }
+
+    td{
+
+        font-size: 14px;
+    }
+}

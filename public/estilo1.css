@@ -128,3 +128,67 @@ body{
     background: #f5f5f5;
 }
 
+/* ========================= */
+/* RESPONSIVE MOVIL */
+/* ========================= */
+
+.tabla-responsive{
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+
+table{
+
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+}
+
+
+
+/* CELULAR */
+
+@media(max-width: 768px){
+
+    body{
+
+        padding: 10px;
+    }
+
+    h1{
+
+        font-size: 30px;
+
+        text-align: center;
+    }
+
+    table{
+
+        min-width: 1000px;
+    }
+
+    td{
+
+        font-size: 14px;
+    }
+
+    button{
+
+        padding: 8px;
+    }
+
+    input{
+
+        width: 100%;
+
+        margin-bottom: 10px;
+
+        box-sizing: border-box;
+    }
+}
