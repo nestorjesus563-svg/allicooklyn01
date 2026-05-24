@@ -1,5 +1,4 @@
 //PLATILLOS
-
 const platillos = [
 
 //VEGETARIANO

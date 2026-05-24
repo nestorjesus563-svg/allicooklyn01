@@ -24,3 +24,7 @@ function login(){
 
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 62637ac (Corregir rutas para Render)

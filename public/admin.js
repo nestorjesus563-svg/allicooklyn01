@@ -1,3 +1,4 @@
+const API = "https://allicooklyn.onrender.com";
 // =====================================
 // VARIABLES
 // =====================================
@@ -7,15 +8,13 @@ let proveedorEditando = null;
 let clienteEditando = null;
 let pedidoEditando = null;
 
-
 // =====================================
 // CLIENTES
 // =====================================
 
 async function cargarClientes(){
 
-    const respuesta = await fetch("http://localhost:3000/clientes");
-
+const respuesta = await fetch(`${API}/clientes`);
     const clientes = await respuesta.json();
 
     let tabla = `
@@ -91,10 +90,9 @@ async function eliminarCliente(id){
 
     if(confirm("¿Eliminar cliente?")){
 
-        await fetch(`http://localhost:3000/clientes/${id}`, {
-
-            method: "DELETE"
-        });
+        await fetch(`${API}/clientes/${id}`, {
+    method: "DELETE"
+});
 
         cargarClientes();
     }
@@ -115,8 +113,7 @@ function editarCliente(id, nombre, edad, telefono, direccion){
 
 
 
-    fetch(`http://localhost:3000/clientes/${id}`, {
-
+fetch(`${API}/clientes/${id}`, {
         method: "PUT",
 
         headers: {
@@ -154,8 +151,7 @@ function editarCliente(id, nombre, edad, telefono, direccion){
 
 async function cargarPedidos(){
 
-    const respuesta = await fetch("http://localhost:3000/pedidos");
-
+const respuesta = await fetch(`${API}/pedidos`);
     const pedidos = await respuesta.json();
 
     let tabla = `
@@ -234,8 +230,7 @@ async function eliminarPedido(id){
 
     if(confirm("¿Eliminar pedido?")){
 
-        await fetch(`http://localhost:3000/pedidos/${id}`, {
-
+await fetch(`${API}/pedidos/${id}`, {
             method: "DELETE"
         });
 
@@ -271,8 +266,7 @@ function editarPedido(id, cliente, productos, total){
 
 
 
-    fetch(`http://localhost:3000/pedidos/${id}`, {
-
+fetch(`${API}/pedidos/${id}`, {
         method: "PUT",
 
         headers: {
@@ -325,12 +319,7 @@ async function guardarEmpleado(){
 
     if(empleadoEditando != null){
 
-        await fetch(
-
-            `http://localhost:3000/empleados/${empleadoEditando}`,
-
-            {
-
+await fetch(`${API}/empleados/${empleadoEditando}`, {
                 method: "PUT",
 
                 headers: {
@@ -353,8 +342,7 @@ async function guardarEmpleado(){
 
     else{
 
-        await fetch("http://localhost:3000/empleados", {
-
+await fetch(`${API}/empleados`, {
             method: "POST",
 
             headers: {
@@ -382,8 +370,7 @@ async function guardarEmpleado(){
 
 async function cargarEmpleados(){
 
-    const respuesta = await fetch("http://localhost:3000/empleados");
-
+const respuesta = await fetch(`${API}/empleados`);
     const empleados = await respuesta.json();
 
     let tabla = `
@@ -475,8 +462,7 @@ async function eliminarEmpleado(id){
 
     if(confirm("¿Eliminar empleado?")){
 
-        await fetch(`http://localhost:3000/empleados/${id}`, {
-
+await fetch(`${API}/empleados/${id}`, {
             method: "DELETE"
         });
 
@@ -511,8 +497,8 @@ async function guardarProveedor(){
 
         await fetch(
 
-            `http://localhost:3000/proveedores/${proveedorEditando}`,
-
+await fetch(
+    `${API}/proveedores/${proveedorEditando}`,
             {
 
                 method: "PUT",
@@ -537,8 +523,7 @@ async function guardarProveedor(){
 
     else{
 
-        await fetch("http://localhost:3000/proveedores", {
-
+await fetch(`${API}/proveedores`, {
             method: "POST",
 
             headers: {
@@ -566,8 +551,7 @@ async function guardarProveedor(){
 
 async function cargarProveedores(){
 
-    const respuesta = await fetch("http://localhost:3000/proveedores");
-
+const respuesta = await fetch(`${API}/proveedores`);
     const proveedores = await respuesta.json();
 
     let tabla = `
@@ -649,8 +633,7 @@ async function eliminarProveedor(id){
 
     if(confirm("¿Eliminar proveedor?")){
 
-        await fetch(`http://localhost:3000/proveedores/${id}`, {
-
+await fetch(`${API}/proveedores/${id}`, {
             method: "DELETE"
         });
 
@@ -671,3 +654,4 @@ function editarProveedor(id, nombre, telefono, empresa, direccion){
 
     document.getElementById("direccionProveedor").value = direccion;
 }
+

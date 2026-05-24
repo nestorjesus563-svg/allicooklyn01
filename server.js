@@ -10,22 +10,18 @@ app.use(express.static("public"));
 
 const conexion = mysql.createConnection({
 
-    host: process.env.DB_HOST,
-
-    user: process.env.DB_USER,
-
-    password: process.env.DB_PASSWORD,
-
-    database: process.env.DB_NAME,
-
-    port: process.env.DB_PORT
+    host: "kodama.proxy.rlwy.net",
+    user: "root",
+    password: "PqvXYqqLlDqPrsvHccCfIHQpYKOcKcie",
+    database: "railway",
+    port: 50989
 });
 
 conexion.connect((error) => {
 
     if(error){
 
-        console.log("Error de conexion");
+        console.log(error);
 
     }else{
 
@@ -746,3 +742,4 @@ app.listen(3000, () => {
 
     console.log("Servidor corriendo en puerto 3000");
 });
+
