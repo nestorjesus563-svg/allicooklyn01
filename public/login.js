@@ -16,7 +16,7 @@ function login(){
 
     ){
 
-        window.location.href = "menup1.html";
+        window.location.href = "opciones.html";
 
     }else{
 
