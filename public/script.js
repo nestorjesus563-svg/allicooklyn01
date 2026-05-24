@@ -550,7 +550,7 @@ async function guardarPedido() {
 
         // GUARDAR CLIENTE
 
-        const respuestaCliente = await fetch("http://localhost:3000/clientes", {
+const respuestaCliente = await fetch(`${API}/clientes`, {
 
             method: "POST",
 
@@ -568,7 +568,7 @@ async function guardarPedido() {
 
         // GUARDAR PEDIDO
 
-        const respuestaPedido = await fetch("http://localhost:3000/pedidos", {
+const respuestaPedido = await fetch(`${API}/pedidos`, {
 
             method: "POST",
 
