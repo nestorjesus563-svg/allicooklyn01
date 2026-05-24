@@ -112,3 +112,19 @@ button:hover{
 
     background: #2196f3;
 }
+
+
+/* ========================= */
+/* RESPONSIVE MOVIL */
+/* ========================= */
+
+body{
+
+    margin: 0;
+    padding: 10px;
+
+    font-family: Arial;
+
+    background: #f5f5f5;
+}
+
