@@ -1,3 +1,5 @@
+const API = "https://allicooklyn.onrender.com";
+
 //PLATILLOS
 const platillos = [
 
