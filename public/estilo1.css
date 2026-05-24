@@ -192,3 +192,114 @@ table{
         box-sizing: border-box;
     }
 }
+
+/* =========================
+RESPONSIVE MOVIL
+========================= */
+
+.menu-btn{
+
+    display: none;
+
+    width: 100%;
+
+    padding: 15px;
+
+    background: #222;
+
+    color: white;
+
+    border: none;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+/* TABLAS */
+
+.tabla-responsive{
+
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table{
+
+    min-width: 700px;
+}
+
+/* INPUTS */
+
+input{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+    box-sizing: border-box;
+}
+
+/* BOTONES */
+
+button{
+
+    padding: 10px 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+/* MOVILES */
+
+@media(max-width: 768px){
+
+    .menu-btn{
+
+        display: block;
+    }
+
+    .contenedor{
+
+        padding: 10px;
+    }
+
+    h1{
+
+        font-size: 28px;
+
+        text-align: center;
+    }
+
+    h2{
+
+        font-size: 22px;
+    }
+
+    .seccion{
+
+        padding: 15px;
+    }
+
+    table{
+
+        font-size: 14px;
+    }
+
+    td, th{
+
+        padding: 8px;
+    }
+}
