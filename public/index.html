@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Verificación de Edad</title>
+    <title>ALLICOOKLYN</title>
 
     <style>
 
@@ -40,7 +40,7 @@
 
             text-align: center;
 
-            width: 300px;
+            width: 320px;
         }
 
         h1{
@@ -58,7 +58,7 @@
 
             border-radius: 10px;
 
-            border: 1px solid #ccc;
+            border: 1px solid gray;
 
             box-sizing: border-box;
         }
@@ -94,13 +94,13 @@
 
         <h1>ALLICOOKLYN</h1>
 
-        <p>Ingresa tu edad</p>
+        <h2>Ingresa tu fecha de nacimiento</h2>
 
-        <input type="number" id="edad">
+        <input type="date" id="fechaNacimiento">
 
         <button onclick="verificarEdad()">
 
-            Entrar
+            CONTINUAR
 
         </button>
 
@@ -110,7 +110,33 @@
 
 function verificarEdad(){
 
-    const edad = document.getElementById("edad").value;
+    const fecha = document.getElementById("fechaNacimiento").value;
+
+    if(fecha == ""){
+
+        alert("Ingresa tu fecha de nacimiento");
+
+        return;
+    }
+
+    const nacimiento = new Date(fecha);
+
+    const hoy = new Date();
+
+    let edad = hoy.getFullYear() - nacimiento.getFullYear();
+
+    const mes = hoy.getMonth() - nacimiento.getMonth();
+
+    if(
+
+        mes < 0 ||
+
+        (mes === 0 && hoy.getDate() < nacimiento.getDate())
+
+    ){
+
+        edad--;
+    }
 
     if(edad >= 18){
 
