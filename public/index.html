@@ -3,41 +3,126 @@
 
 <head>
 
-	<meta charset="utf-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Verificación de Edad</title>
+
+    <style>
+
+        body{
+
+            margin: 0;
+
+            height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: #fff3e0;
+
+            font-family: Arial;
+        }
+
+        .caja{
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+            text-align: center;
+
+            width: 300px;
+        }
+
+        h1{
+
+            color: orange;
+        }
+
+        input{
+
+            width: 100%;
+
+            padding: 12px;
+
+            margin-top: 15px;
+
+            border-radius: 10px;
+
+            border: 1px solid #ccc;
+
+            box-sizing: border-box;
+        }
+
+        button{
+
+            width: 100%;
+
+            padding: 12px;
+
+            margin-top: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: orange;
+
+            color: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-	<div class="form-container">
+    <div class="caja">
 
-		<h2>Iniciar Sesión</h2>
+        <h1>ALLICOOKLYN</h1>
 
-		<input
-		type="text"
-		id="usuario"
-		placeholder="Usuario">
+        <p>Ingresa tu edad</p>
 
-		<input
-		type="password"
-		id="contrasena"
-		placeholder="Contraseña">
+        <input type="number" id="edad">
 
-		<button type="button" onclick="login()">
+        <button onclick="verificarEdad()">
 
-			Entrar
+            Entrar
 
-		</button>
+        </button>
 
-	</div>
+    </div>
 
-	<script src="login.js"></script>
+<script>
+
+function verificarEdad(){
+
+    const edad = document.getElementById("edad").value;
+
+    if(edad >= 18){
+
+        window.location.href = "inicio.html";
+
+    }else{
+
+        alert("Debes ser mayor de edad");
+    }
+}
+
+</script>
 
 </body>
-
 </html>
