@@ -6,7 +6,7 @@
     --color-accent: #A7F3D0;
     --color-yellow: #FDE68A;
     --color-text-dark: #6B4F4F;
-    --color-text-light: #6B4F4F;
+    --color-text-light: #FFFFFF;
 
     --glass-bg: rgba(255,255,255,0.75);
     --glass-border: rgba(255,255,255,0.4);
@@ -66,7 +66,7 @@ body{
     color:white;
     font-size:35px;
     font-weight:700;
-    text-shadow:0 0 15px rgba(255,255,255,.7);
+    text-shadow:0 0 15px rgba(255,255,255,0.15);
 }
 
 .customer-support{

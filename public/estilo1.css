@@ -1,305 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    --rosa: #FFB6C1;
+    --lavanda: #D8B4FE;
+    --menta: #A7F3D0;
+    --vainilla: #FDE68A;
+    --texto: #6B4F4F;
+    --blanco: rgba(255,255,255,0.85);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
+    font-family:'Poppins',sans-serif;
 
-    font-family: Arial;
+    background: linear-gradient(
+        135deg,
+        #FFE4EC,
+        #F3E8FF,
+        #E0FFF4
+    );
 
-    background: #ececec;
+    min-height:100vh;
 
-    margin: 0;
+    padding:30px;
 
-    padding: 30px;
+    color:var(--texto);
 }
 
 .contenedor{
-
-    width: 95%;
-
-    margin: auto;
+    width:95%;
+    margin:auto;
 }
 
 h1{
-
-    text-align: center;
-
-    margin-bottom: 40px;
+    text-align:center;
+    margin-bottom:40px;
+    color:#D946EF;
+    font-size:40px;
 }
 
 .seccion{
+    background:var(--blanco);
 
-    background: white;
+    backdrop-filter:blur(15px);
 
-    padding: 20px;
+    padding:25px;
 
-    margin-bottom: 30px;
+    margin-bottom:30px;
 
-    border-radius: 10px;
+    border-radius:25px;
 
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    box-shadow:0 8px 25px rgba(216,180,254,.25);
 }
 
 h2{
+    background:linear-gradient(
+        45deg,
+        var(--rosa),
+        var(--lavanda)
+    );
 
-    background: #222;
+    color:white;
 
-    color: white;
+    padding:12px;
 
-    padding: 10px;
+    border-radius:15px;
 
-    border-radius: 5px;
-}
-
-table{
-
-    width: 100%;
-
-    border-collapse: collapse;
-
-    margin-top: 20px;
-}
-
-table th{
-
-    background: #333;
-
-    color: white;
-
-    padding: 12px;
-}
-
-table td{
-
-    padding: 10px;
-
-    text-align: center;
-
-    border: 1px solid #ccc;
-}
-
-input{
-
-    padding: 10px;
-
-    margin: 5px;
-
-    width: 200px;
-}
-
-button{
-
-    padding: 10px 20px;
-
-    border: none;
-
-    border-radius: 5px;
-
-    cursor: pointer;
-
-    background: #2196f3;
-
-    color: white;
-}
-
-button:hover{
-
-    opacity: 0.8;
-}
-
-.btnEliminar{
-
-    background: red;
-}
-
-.btnEditar{
-
-    background: #2196f3;
-}
-
-
-/* ========================= */
-/* RESPONSIVE MOVIL */
-/* ========================= */
-
-body{
-
-    margin: 0;
-    padding: 10px;
-
-    font-family: Arial;
-
-    background: #f5f5f5;
-}
-
-/* ========================= */
-/* RESPONSIVE MOVIL */
-/* ========================= */
-
-.tabla-responsive{
-
-    width: 100%;
-
-    overflow-x: auto;
-}
-
-
-
-table{
-
-    width: 100%;
-
-    min-width: 900px;
-
-    border-collapse: collapse;
-}
-
-
-
-/* CELULAR */
-
-@media(max-width: 768px){
-
-    body{
-
-        padding: 10px;
-    }
-
-    h1{
-
-        font-size: 30px;
-
-        text-align: center;
-    }
-
-    table{
-
-        min-width: 1000px;
-    }
-
-    td{
-
-        font-size: 14px;
-    }
-
-    button{
-
-        padding: 8px;
-    }
-
-    input{
-
-        width: 100%;
-
-        margin-bottom: 10px;
-
-        box-sizing: border-box;
-    }
-}
-
-/* =========================
-RESPONSIVE MOVIL
-========================= */
-
-.menu-btn{
-
-    display: none;
-
-    width: 100%;
-
-    padding: 15px;
-
-    background: #222;
-
-    color: white;
-
-    border: none;
-
-    font-size: 20px;
-
-    cursor: pointer;
+    text-align:center;
 }
 
 /* TABLAS */
 
 .tabla-responsive{
-
-    width: 100%;
-
-    overflow-x: auto;
+    width:100%;
+    overflow-x:auto;
 }
 
 table{
+    width:100%;
+    min-width:700px;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
 
-    min-width: 700px;
+table th{
+    background:var(--lavanda);
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #eee;
+}
+
+tr:nth-child(even){
+    background:#FFF7FB;
+}
+
+tr:hover{
+    background:#FCE7F3;
 }
 
 /* INPUTS */
 
 input{
+    width:100%;
 
-    width: 100%;
+    padding:12px;
 
-    padding: 12px;
+    margin-top:10px;
+    margin-bottom:10px;
 
-    margin-top: 10px;
+    border:2px solid #F9A8D4;
 
-    margin-bottom: 10px;
+    border-radius:15px;
 
-    border-radius: 10px;
+    background:#FFF7FB;
 
-    border: 1px solid #ccc;
+    font-size:15px;
 
-    box-sizing: border-box;
+    transition:.3s;
+}
+
+input:focus{
+    outline:none;
+
+    border-color:#C084FC;
+
+    box-shadow:0 0 12px rgba(192,132,252,.4);
 }
 
 /* BOTONES */
 
 button{
+    padding:12px 20px;
 
-    padding: 10px 15px;
+    border:none;
 
-    border: none;
+    border-radius:20px;
 
-    border-radius: 10px;
+    cursor:pointer;
 
-    cursor: pointer;
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    background:linear-gradient(
+        45deg,
+        var(--rosa),
+        var(--lavanda)
+    );
+
+    transition:.3s;
 }
 
-/* MOVILES */
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(216,180,254,.5);
+}
 
-@media(max-width: 768px){
+.btnEliminar{
+    background:linear-gradient(
+        45deg,
+        #FF8FAB,
+        #FB7185
+    );
+}
+
+.btnEditar{
+    background:linear-gradient(
+        45deg,
+        #A78BFA,
+        #C084FC
+    );
+}
+
+/* BOTÓN MENÚ */
+
+.menu-btn{
+    display:none;
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:linear-gradient(
+        45deg,
+        var(--rosa),
+        var(--lavanda)
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    body{
+        padding:10px;
+    }
 
     .menu-btn{
-
-        display: block;
+        display:block;
     }
 
     .contenedor{
-
-        padding: 10px;
+        padding:10px;
     }
 
     h1{
-
-        font-size: 28px;
-
-        text-align: center;
+        font-size:30px;
     }
 
     h2{
-
-        font-size: 22px;
+        font-size:20px;
     }
 
     .seccion{
-
-        padding: 15px;
+        padding:15px;
     }
 
     table{
-
-        font-size: 14px;
+        min-width:1000px;
     }
 
-    td, th{
+    td,
+    th{
+        padding:8px;
+        font-size:14px;
+    }
 
-        padding: 8px;
+    button{
+        width:100%;
+        margin-top:10px;
+    }
+
+    input{
+        width:100%;
     }
 }
