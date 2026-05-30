@@ -9,82 +9,130 @@
 
     <title>ALLICOOKLYN</title>
 
-    <style>
+   <style>
 
-        body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-            margin: 0;
+:root{
+    --rosa: #FFB6C1;
+    --lavanda: #D8B4FE;
+    --texto: #6B4F4F;
+    --blanco: rgba(255,255,255,0.85);
+}
 
-            height: 100vh;
+body{
 
-            display: flex;
+    margin: 0;
 
-            justify-content: center;
+    min-height: 100vh;
 
-            align-items: center;
+    display: flex;
 
-            background: #fff3e0;
+    justify-content: center;
 
-            font-family: Arial;
-        }
+    align-items: center;
 
-        .caja{
+    background: linear-gradient(
+        135deg,
+        #FFE4EC,
+        #F3E8FF,
+        #E0FFF4
+    );
 
-            background: white;
+    font-family: 'Poppins', sans-serif;
+}
 
-            padding: 30px;
+.caja{
 
-            border-radius: 20px;
+    background: var(--blanco);
 
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(15px);
 
-            text-align: center;
+    padding: 35px;
 
-            width: 320px;
-        }
+    border-radius: 25px;
 
-        h1{
+    box-shadow: 0 8px 25px rgba(216,180,254,.25);
 
-            color: orange;
-        }
+    text-align: center;
 
-        input{
+    width: 320px;
+}
 
-            width: 100%;
+h1{
 
-            padding: 12px;
+    color: #6B4F4F;
 
-            margin-top: 15px;
+    margin-bottom: 20px;
+}
 
-            border-radius: 10px;
+input{
 
-            border: 1px solid gray;
+    width: 100%;
 
-            box-sizing: border-box;
-        }
+    padding: 12px;
 
-        button{
+    margin-top: 15px;
 
-            width: 100%;
+    border-radius: 15px;
 
-            padding: 12px;
+    border: 2px solid #F9A8D4;
 
-            margin-top: 15px;
+    background: #FFF7FB;
 
-            border: none;
+    box-sizing: border-box;
 
-            border-radius: 10px;
+    font-size: 15px;
 
-            background: orange;
+    transition: .3s;
+}
 
-            color: white;
+input:focus{
 
-            font-size: 16px;
+    outline: none;
 
-            cursor: pointer;
-        }
+    border-color: #C084FC;
 
-    </style>
+    box-shadow: 0 0 12px rgba(192,132,252,.4);
+}
+
+button{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        45deg,
+        var(--rosa),
+        var(--lavanda)
+    );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+button:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(216,180,254,.5);
+}
+
+</style>
 
 </head>
 
