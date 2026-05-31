@@ -111,7 +111,7 @@ const platillos = [
 
     personas: "4 personas",
 
-    imagen: "imagenes/comida4.jpg",
+    imagen: "imagenes/comida4..jpg",
 
     ingredientes: [
         "Lentejas",

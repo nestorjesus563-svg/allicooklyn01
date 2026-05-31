@@ -58,6 +58,7 @@
         </div>
 
     </div>
+    <div id="mensaje-edad" class="alerta-error"></div>
 
 </header>
 
@@ -75,7 +76,8 @@
     <input
     type="number"
     id="edad"
-    placeholder="Edad">
+    placeholder="Edad" min="1" oninput="validarlaEdad()">
+    <span id="mensaje-edad" style="color: red; font-size: 14px;"></span>
 
     <input
     type="text"
@@ -177,6 +179,42 @@
 
 <section id="ticket"></section>
 
+<style>
+.alerta-error {
+    display: none;
+    background-color: #ffdddd;
+    border-left: 4px solid #f44336;
+    color: #a80000;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.alerta-error.mostrar {
+    display: block;
+}
+.input-error {
+    border: 2px solid #f44336 !important;
+}
+</style>
+
+<script>
+    function validarlaEdad(){
+        const edadInput = document.getElementById('edad');
+        const mensaje = document.getElementById('mensaje-edad');
+        const edad = parseInt(edadInput.value);
+
+        if (edad < 18 && edadInput.value !== ''){
+            alert('Debes ser mayor de edad. La edad mínima es 18 años.');
+        mensaje.textContent = 'Debes ser mayor de edad';
+        edadInput.value = '';
+    } else {
+        mensaje.textContent = '';
+    }
+        }
+</script>
 
 
 
