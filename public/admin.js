@@ -1,16 +1,16 @@
 const API = "https://allicooklyn.onrender.com";
-// =====================================
+
 // VARIABLES
-// =====================================
+
 
 let empleadoEditando = null;
 let proveedorEditando = null;
 let clienteEditando = null;
 let pedidoEditando = null;
 
-// =====================================
+
 // CLIENTES
-// =====================================
+
 
 async function cargarClientes(){
 
@@ -145,9 +145,9 @@ fetch(`${API}/clientes/${id}`, {
 
 
 
-// =====================================
+
 // PEDIDOS
-// =====================================
+
 
 async function cargarPedidos(){
 
@@ -164,7 +164,7 @@ const respuesta = await fetch(`${API}/pedidos`);
             <th>Cliente</th>
             <th>Productos</th>
             <th>Total</th>
-            <th>Fecha</th>
+
             <th>Eliminar</th>
             <th>Editar</th>
 
@@ -182,7 +182,7 @@ const respuesta = await fetch(`${API}/pedidos`);
             <td>${pedidos[i].cliente}</td>
             <td>${pedidos[i].productos}</td>
             <td>$${pedidos[i].total}</td>
-            <td>${pedidos[i].fecha}</td>
+           
 
             <td>
 
@@ -296,9 +296,9 @@ fetch(`${API}/pedidos/${id}`, {
 
 
 
-// =====================================
+
 // EMPLEADOS
-// =====================================
+
 
 async function guardarEmpleado(){
 
@@ -315,7 +315,7 @@ async function guardarEmpleado(){
 
 
 
-    // EDITAR
+    // MODIFICAR
 
     if(empleadoEditando != null){
 
@@ -472,9 +472,9 @@ await fetch(`${API}/empleados/${id}`, {
 
 
 
-// =====================================
+
 // PROVEEDORES
-// =====================================
+
 
 async function guardarProveedor(){
 
@@ -491,7 +491,7 @@ async function guardarProveedor(){
 
 
 
-    // EDITAR
+    // MODIFICAR
 
     if(proveedorEditando != null){
 
