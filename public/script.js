@@ -1346,9 +1346,189 @@ const platillos = [
     ],
     precio: 95
   },
+  // SIN AZÚCAR
+
+{
+    categoria: "sin azucar",
+    nombre: "Pechuga de pollo al limón",
+    tiempo: "35 min",
+    personas: "4 personas",
+    imagen: "imagenes/comida27.jpg",
+    ingredientes: [
+      "4 pechugas de pollo",
+      "Jugo de limón",
+      "Ajo",
+      "Aceite de oliva",
+      "Pimienta",
+      "Sal",
+      "Perejil"
+    ],
+    preparacion: [
+      "Marina el pollo con limón, ajo y especias.",
+      "Calienta una sartén con aceite de oliva.",
+      "Cocina las pechugas 6 minutos por lado.",
+      "Agrega más limón al final.",
+      "Sirve con perejil fresco."
+    ],
+    precio: 220
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Salmón al horno con verduras",
+    tiempo: "40 min",
+    personas: "4 personas",
+    imagen: "imagenes/comida28.jpg",
+    ingredientes: [
+      "Filetes de salmón",
+      "Brócoli",
+      "Zanahoria",
+      "Calabaza",
+      "Aceite de oliva",
+      "Ajo",
+      "Pimienta",
+      "Sal"
+    ],
+    preparacion: [
+      "Coloca el salmón y verduras en una bandeja.",
+      "Sazona con aceite, ajo, sal y pimienta.",
+      "Hornea a 200°C durante 25 minutos.",
+      "Verifica que el salmón esté cocido.",
+      "Sirve caliente."
+    ],
+    precio: 340
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Ensalada de atún y aguacate",
+    tiempo: "15 min",
+    personas: "2 personas",
+    imagen: "imagenes/comida29.jpg",
+    ingredientes: [
+      "Atún en agua",
+      "Aguacate",
+      "Lechuga",
+      "Pepino",
+      "Jitomate",
+      "Limón",
+      "Sal"
+    ],
+    preparacion: [
+      "Lava y corta las verduras.",
+      "Escurre el atún.",
+      "Mezcla todos los ingredientes.",
+      "Agrega limón y sal al gusto.",
+      "Sirve fresca."
+    ],
+    precio: 180
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Omelette de espinacas y queso",
+    tiempo: "20 min",
+    personas: "2 personas",
+    imagen: "imagenes/comida30.jpg",
+    ingredientes: [
+      "Huevos",
+      "Espinacas",
+      "Queso panela",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta"
+    ],
+    preparacion: [
+      "Bate los huevos con sal y pimienta.",
+      "Saltea las espinacas.",
+      "Vierte los huevos en la sartén.",
+      "Añade queso y espinacas.",
+      "Dobla el omelette y sirve."
+    ],
+    precio: 150
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Limonada sin azúcar",
+    tiempo: "10 min",
+    personas: "4 personas",
+    imagen: "imagenes/bebida25.jpg",
+    ingredientes: [
+      "Limones",
+      "Agua",
+      "Hielo",
+      "Endulzante sin calorías"
+    ],
+    preparacion: [
+      "Exprime los limones.",
+      "Mezcla con agua fría.",
+      "Agrega endulzante al gusto.",
+      "Añade hielo.",
+      "Sirve fría."
+    ],
+    precio: 60
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Té verde helado",
+    tiempo: "15 min",
+    personas: "4 personas",
+    imagen: "imagenes/bebida26.jpg",
+    ingredientes: [
+      "Té verde",
+      "Agua",
+      "Hielo",
+      "Rodajas de limón"
+    ],
+    preparacion: [
+      "Prepara el té verde.",
+      "Deja enfriar completamente.",
+      "Agrega hielo.",
+      "Decora con limón.",
+      "Sirve frío."
+    ],
+    precio: 55
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Agua de pepino con limón",
+    tiempo: "10 min",
+    personas: "4 personas",
+    imagen: "imagenes/bebida27.jpg",
+    ingredientes: [
+      "Pepino",
+      "Limón",
+      "Agua",
+      "Hielo"
+    ],
+    preparacion: [
+      "Licúa el pepino con agua.",
+      "Cuela la mezcla.",
+      "Agrega jugo de limón.",
+      "Añade hielo.",
+      "Sirve fría."
+    ],
+    precio: 50
+  },
+  {
+    categoria: "sin azucar",
+    nombre: "Café frío sin azúcar",
+    tiempo: "5 min",
+    personas: "1 persona",
+    imagen: "imagenes/bebida28.jpg",
+    ingredientes: [
+      "Café preparado",
+      "Hielo",
+      "Leche descremada opcional"
+    ],
+    preparacion: [
+      "Prepara el café y deja enfriar.",
+      "Llena un vaso con hielo.",
+      "Vierte el café.",
+      "Agrega leche si deseas.",
+      "Sirve inmediatamente."
+    ],
+    precio: 70
+  },
 ];
 
-//MOSTRAR RECETAS
 
 function mostrarRecetas(){
 
@@ -1480,7 +1660,7 @@ function mostrarRecetas(){
     `;
 }
 
-//GENERAR TICKET
+
 
 function generarTicket(){
 
@@ -1576,7 +1756,7 @@ function generarTicket(){
 
 
 
-//GUARDAR PEDIDO
+
 
 async function guardarPedido() {
 
@@ -1634,7 +1814,7 @@ async function guardarPedido() {
 
     try {
 
-        // GUARDAR CLIENTE
+    
 
 const respuestaCliente = await fetch(`${API}/clientes`, {
 
@@ -1652,7 +1832,7 @@ const respuestaCliente = await fetch(`${API}/clientes`, {
         console.log(resultadoCliente);
 
 
-        // GUARDAR PEDIDO
+     
 
 const respuestaPedido = await fetch(`${API}/pedidos`, {
 
@@ -1670,7 +1850,7 @@ const respuestaPedido = await fetch(`${API}/pedidos`, {
         alert(resultadoPedido);
 
 
-        // LIMPIAR FORMULARIO
+        
 
         document.getElementById("nombre").value = "";
         document.getElementById("edad").value = "";
