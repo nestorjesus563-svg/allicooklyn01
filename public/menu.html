@@ -97,7 +97,7 @@
     type="number"
     id="edad"
     placeholder="Edad" min="1" oninput="validarlaEdad()">
-    <span id="mensaje-edad" style="color: red; font-size: 14px;"></span>
+    <div id="mensaje-edad" class="alerta-error" style="color;"></div>
 
     <input
     type="text"
@@ -208,12 +208,12 @@
         const edad = parseInt(edadInput.value);
 
         if (edad < 18 && edadInput.value !== '') {
-    mensajeDiv.textContent = '⚠️ Debes ser mayor de edad.La edad mínima es 18 años ';
-    mensajeDiv.classList.add('mostrar');
+    mensaje.textContent = '⚠️ Debes ser mayor de edad.La edad mínima es 18 años ';
+    mensaje.classList.add('mostrar');
     edadInput.classList.add('input-error');
    
 } else {
-    mensajeDiv.classList.remove('mostrar');
+    mensaje.classList.remove('mostrar');
     edadInput.classList.remove('input-error');
 }
         }
