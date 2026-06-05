@@ -1876,3 +1876,7 @@ const respuestaPedido = await fetch(`${API}/pedidos`, {
         alert("Error al guardar");
     }
 }
+
+document.getElementById("btnPodcast").addEventListener("click", function() {
+    window.open("https://drive.google.com/file/d/1EtnjCgo2S8aUkAQwRIxxab1HfT4FdHw1/view?usp=d", "_blank");
+});
